@@ -54,14 +54,15 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"
-  Movie.find_by(title:, 
-    release_date:, 
-    director:)
+  Movie.find_by(title: "Title") 
+  Movie.find_by(release_date: 2000) 
+  Movie.find_by(director: "Me")
 end
 
 def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by 
   # release date descending
+  blank here
   __
 end
 
