@@ -15,11 +15,13 @@ describe 'Movie' do
     let(:movie) { Movie.new }
     it 'has a title' do
       movie.title = "The Matrix"
+      #binding.pry
       expect(movie.title).to eq("The Matrix")
     end
 
     it 'has a release date' do
       movie.release_date = 1999
+      #binding.pry
       expect(movie.release_date).to eq(1999)
     end
 
